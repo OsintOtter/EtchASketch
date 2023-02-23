@@ -5,21 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="reset.css">
+    <!-- <link rel="stylesheet" href="reset.css"> -->
     <title>Draw Me</title>
 </head>
 <body>
     <div class="flexContainer">
-        <div class="title"><h1>Sketchpad</h1></div>
+        <div class="title"><h1>Let's Draw!</h1></div>
         <div class="mode">Mode: Coloring</div>
         <div class="content">
             <div class="board"></div>
             <div class="buttons">
-                <button onclick="changeColor('black')">Black</button>
-                <button onclick="changeColor('white')">Eraser</button>
-                <button onclick="changeColor('grey')">Grey</button>
-                <button onclick="changeColor('random')">Random</button>
-                <button onclick="resetBoard()">Reset</button>
+                <button class="blackButton" onclick="changeColor('black')">Black</button>
+                <button class="whiteButton" onclick="changeColor('white')">Eraser</button>
+                <button class="greyButton" onclick="changeColor('grey')">Grey</button>
+                <button class="randomButton" onclick="changeColor('random')">Random</button>
+                <button class="resetButton" onclick="resetBoard()">Reset</button>
             </div>
             <div>
                 <input type="text" placeholder="Size of Board" value="16" onchange="changeSize(this.value)">
